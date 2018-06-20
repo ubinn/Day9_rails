@@ -1,3 +1,4 @@
+<h1>회원가입</h1>
 <%= form_tag("/users", method: "POST") do %>
     <%= text_field_tag 'user_id', nil, placeholder:'ID' %>
     <%= password_field_tag(:password) %>

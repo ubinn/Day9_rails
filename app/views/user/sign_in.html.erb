@@ -1,0 +1,6 @@
+<h1>로그인 창</h1>
+<%= form_tag("/sign_in") do %>
+    <%= text_field_tag 'user_id',nil,placeholder:"ID" %>
+    <%= password_field_tag(:password ) %>
+    <%= submit_tag("로그인") %>
+<% end %>
