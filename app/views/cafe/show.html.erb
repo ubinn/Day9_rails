@@ -1,0 +1,6 @@
+<h3><%= @cafe.title %></h3>
+<hr/>
+<h4><%= @cafe.description %></h4>
+<%= link_to "목록", "/caves" %>
+<%= link_to "수정","/cafe/#{@cafe.id}/edit" %>
+<%= link_to "삭제", "cafe/#{@cafe.id}", method: "delete" %>

@@ -1,0 +1,5 @@
+<%= form_tag("/caves", method: "POST") do %>
+    <%= text_field_tag 'title', nil, placeholder:'title' %> <br/>
+    <%= text_area_tag 'description', nil, placeholder:'description' %>
+    <%= submit_tag("등록하기") %>
+<% end %>

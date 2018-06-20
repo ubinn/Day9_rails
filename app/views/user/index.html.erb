@@ -1,0 +1,6 @@
+<ul>
+<% @users.each do |r|%>
+    <li> <%= link_to r.user_id, "/user/#{r.id}" %> </li>
+<% end %>
+</ul>
+<%= link_to "새 유저 등록", "/sign_up" %>
